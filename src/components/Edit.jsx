@@ -28,7 +28,7 @@ export const Edit = ()=>{
         
         
         console.log('IDDDD',id,'PLAN',plan);
-        const document = await getDoc(doc(bd, "doctors", id));
+        const document = await getDoc(doc(bd, plan, id));
 
 
         if (document.exists()) {
@@ -62,7 +62,7 @@ export const Edit = ()=>{
         
         const update =async(e)=>{
             e.preventDefault();
-            updateDoc(doc(bd,'doctors',id),{
+            updateDoc(doc(bd,plan,id),{
                  //aca lo de la izquierda es la clave lo de la derecha el valor que voy a pasar medianyte el input
                     name: name,
                     lastname: lastname,
@@ -103,14 +103,14 @@ export const Edit = ()=>{
         
         <form onSubmit={update}>
 
-        <div>
+        {/* <div>
             <label>Elija de que plan editar el prestador:</label>
             <select onChange={(e)=>setplan(e.target.value)}>
                 <option value="210">210</option>
-                <option value="doctors310">310</option>
-                <option value="doctors410">410</option>
+                <option value="310">310</option>
+                <option value="410">410</option>
             </select>
-        </div>
+        </div> */}
 
             <div>    
                 <label> nombre:</label>

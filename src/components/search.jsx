@@ -2,6 +2,7 @@
 import { query } from "firebase/firestore"
 import { useState } from "react"
 import { useNavigate, useLocation  } from 'react-router-dom'
+import {Singout} from './singout'
     
 
 export const Search = ()=>{
@@ -44,7 +45,7 @@ export const Search = ()=>{
     const handle = (e)=>{
             e.preventDefault();
             if(palabrabusqueda==''){
-                navigate(`doctors/display/${plan}`)
+                navigate(`/doctors/display/${plan}`)
                 // switch (plan) {
                 //     case 'doctors':
                 //     navigate('/doctors/display/210');
@@ -61,19 +62,23 @@ export const Search = ()=>{
 
             }
             
-            else{navigate(`doctors/searchresult/${plan}/?search=${palabrabusqueda}`)}
+            else{navigate(`/doctors/searchresult/${plan}/?search=${palabrabusqueda}`)}
             
         
     }
 
 
-return     <form onSubmit={handle}>
+return  (  
+    <div>    
+        <Singout/>
+        
+        <form onSubmit={handle}>
         <div>
             <label>Seleccione su plan:</label>
             <select onChange={(e)=>setplan(e.target.value)}>
-                <option value="210" selected >210</option>
-                <option value="doctors310">310</option>
-                <option value="doctors410">410</option>
+                <option value="210">210</option>
+                <option value="310">310</option>
+                <option value="410">410</option>
                 
             </select>
         </div>
@@ -83,5 +88,7 @@ return     <form onSubmit={handle}>
         </div>
         <div><button type="submit">buscar</button></div>
     </form>
+    </div>
+)
 
 }

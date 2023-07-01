@@ -12,6 +12,7 @@ import {storage} from '../firebase/conexion'
 import { ref,getStorage,getDownloadURL} from 'firebase/storage'
 import {Search} from './search'
 import {useLocation} from 'react-router-dom'
+import {Singout} from './singout'
 
 
 export const Grid = ()=>{
@@ -132,19 +133,21 @@ const erasealert=(id)=>{
 
 return(
    <div>
+      <Singout/>
       <div>
          <h3>Gestionador de Prestadores</h3>
+         <table><tr><Link to={'/doctors/create'}><tr>Crear prestador</tr></Link></tr></table>
          <h4>Por favor ingrese el plan donde donde pertenece su prestador: </h4>
          
             <select onChange={(e)=>setplan(e.target.value)}>
-               <option value="210" selected>210</option>
-               <option value="doctors310">310</option>
-               <option value="doctors410">410</option>
+               <option value="210">210</option>
+               <option value="310">310</option>
+               <option value="410">410</option>
             </select>
       </div>
       <div>
          
-         <table><tr><Link to={'/doctors/create'}><tr>Crear prestador</tr></Link></tr></table>
+         
 
 
          <table>

@@ -80,8 +80,8 @@ return(
         <label>Elija en que plan agregar prestador:</label>
         <select onChange={(e)=>setplan(e.target.value)}>
             <option value="210">210</option>
-            <option value="doctors310">310</option>
-            <option value="doctors410">410</option>
+            <option value="310">310</option>
+            <option value="410">410</option>
             </select>
         </div>
         <div>    

@@ -12,6 +12,7 @@ import {storage} from '../firebase/conexion'
 import { ref,getStorage,getDownloadURL} from 'firebase/storage'
 import {Search} from './search'
 import {useLocation, useNavigate,useParams} from 'react-router-dom'
+import {Singout} from './singout'
 
 
 export const Result = ()=>{
@@ -140,14 +141,16 @@ const erasealert=(id)=>{
 
 return(
    <div>
+      <Singout/>
       <div>
          <h3>Resultado de busqueda de Prestadores</h3>
+         <h4>{search} en el plan {plan} , para realizar otra busqueda diríjase a <Link to={'/search'}>Home</Link></h4>
          {/* <h4>Por favor ingrese el plan donde donde pertenece su prestador: </h4> */}
          
             {/* <select onChange={(e)=>setplan(e.target.value)}>
-               <option value="210" selected>210</option>
-               <option value="doctors310">310</option>
-               <option value="doctors410">410</option>
+               <<option value="210">210</option>
+               <option value="310">310</option>
+               <option value="410">410</option>
             </select> */}
       </div>
       <div>
