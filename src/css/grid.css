@@ -1,0 +1,81 @@
+.prestador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h3, h4{
+    color:#dfece6;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+h4{
+    display: inline-block !important;
+    margin-right: 10px;
+}
+.listadoMedicos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80vw;
+ }
+ 
+.tabla{
+    margin-top: 25px;
+    
+}
+.datos{
+    color:#92c7a3;
+    
+}
+
+.edit{
+    margin-top: 90%;
+}
+
+.divPerfil{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 8vh;
+}
+.imgPerfil{
+    height: 8vh;
+    width: 8vh;
+    margin: 0;
+    /* size: inherit; */
+}
+
+/* .btn-danger{
+    size: 5vw;
+} 
+
+btn.registro{
+    size: 5vw;
+} */
+/*
+@media screen and (max-width: 460px) {
+    .listadoMedicos.responsive-table td,
+    .listadoMedicos.responsive-table th {
+      display: block;
+      width: 100%;
+    }
+  
+    .listadoMedicos.responsive-table td:before,
+    .listadoMedicos.responsive-table th:before {
+      content: attr(data-label);
+      display: inline-block;
+      font-weight: bold;
+      margin-right: 5px;
+      width: 40%;
+    }
+    .btn{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+  }
+  */

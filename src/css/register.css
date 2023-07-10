@@ -1,0 +1,72 @@
+.login{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#dfece6;
+    gap:25px;
+    
+}
+.prestacion{
+    color:#dfece6;
+    padding-right: 15px;
+   letter-spacing: 0.09rem;
+}
+input{
+    padding:7px 8px;
+    font-size: large;
+    color: #3ca2a2;
+    border-radius: 8px;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+input:hover{
+    border:none;
+    border-bottom:2px solid #92c7a3;
+    color:#92c7a3;
+}
+
+.btn{
+    padding:4px 5px;
+    font-size: large;
+    color: #dfece6;
+    border-radius: 8px;
+    letter-spacing: 0.09rem;
+    background-color: #3ca2a2;
+    border: none;
+
+}
+.registro{
+    background-color: #92c7a3;
+    color:white;
+    margin-bottom: 25px;
+}
+
+.rol, .archivo{
+    font-size: large;
+    letter-spacing: 0.09rem;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;  
+    text-align: center;
+    color:#dfece6
+}
+
+.file{
+    border-radius: 5px;
+    padding:4px 5px;   
+}
+.file:hover{
+    border:none;
+}
+.especialista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

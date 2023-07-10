@@ -1,0 +1,28 @@
+.prestador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h3, h4{
+    color:#dfece6;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.home{
+    color:#92c7a3;
+}
+table{
+    margin-top: 25px;
+    
+}
+.tabla{
+    margin-top: 25px;
+    
+}
+.datos{
+    color:#92c7a3;
+    
+}
